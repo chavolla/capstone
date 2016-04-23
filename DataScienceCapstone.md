@@ -9,7 +9,7 @@
 Wizard Text Editor
 ========================================================
 author: Edgar Chavolla
-date: Fri Apr 22 23:06:49 2016
+date: Fri Apr 22 23:36:28 2016
 css: http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css
 **Data Science Capstone**
 
@@ -49,10 +49,10 @@ Algorithms in the backend
 Performance
 ========================================================
  <div class="bg-info roundC" style="margin-left:25px;font-size:18px;top:px;line-height: 90%;width:99%;padding:20px;">
-   <div class="alert alert-info" style="font-size:22px;">Several tests were performed in order to verify the speed and the storage cost. After the test phase was completed, some aspects were clarified and some desisions were made.</div><br><br>
+   <div class="alert alert-info" style="font-size:22px;">Several tests were performed in order to verify the speed and the storage cost. After the test phase was completed, some aspects were clarified and some decisions were made.</div><br><br>
  <div class="well col-md-3 roundC" style="width:20%;"><h3>Language Model Storage</h3></div>The data is better to have it stored as with hashes. In R this is possible using and environment object. Hashes improves not only storage space, but also the data search. The hash structure implemented mimic a tree structure. This tree allows to perform a backoff like procedure. 
  
-   A test trying to store 4 million n-grams in the Hash structure were fitted in 44MB, just pruning those n-grams with less than 3 counts from a set of 40 Millions n-grams. A greater pruning rejecting thos n-grams with less than 10 counts, created a set of around 950 000 n-grams stored in a 12 MB file.<br><br>
+   A test trying to store 4 million n-grams in the Hash structure were fitted in 44MB, just pruning those n-grams with less than 3 counts from a set of 40 Millions n-grams. A greater pruning rejecting those n-grams with less than 10 counts, created a set of around 950 000 n-grams stored in a 12 MB file.<br><br>
   
   <div class="well col-md-3 roundC" style="width:20%;"><h3>Data Time Retrieval</h3></div> Test speed test using the result 12 MB hash structure, were done using a small R script, a local web server and the shinyapps web.
   - Using the R script the response was with almost no delay.
@@ -70,7 +70,7 @@ Basic Usage
 
  <div class="bg-success roundC" style="margin-left:25px;font-size:18px;top:px;line-height: 90%;width:99%;z-index:100;">
 
-- the application can be accesed in the following link: <a href="https://chavolla.shinyapps.io/TextWizardCourseraCapstone/">https://chavolla.shinyapps.io/TextWizardCourseraCapstone/ </a>
+- the application can be accessed in the following link: <a href="https://chavolla.shinyapps.io/TextWizardCourseraCapstone/">https://chavolla.shinyapps.io/TextWizardCourseraCapstone/ </a>
 
 - The user can enter information by typing words. Additionally the user can also paste some text  in the editor area.
 
@@ -80,7 +80,6 @@ Basic Usage
 
   <img style="margin:0px;" src="img03.png"></img>
   
-- 
 
 </div>
 
